@@ -16,12 +16,6 @@ void main() {
   
   print('The contexnt of $str1 is a string');
 
-  
-
-
-
-
-
-
+  assert(num2 != 3.5);
 
 }
