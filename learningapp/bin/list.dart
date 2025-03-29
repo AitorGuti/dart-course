@@ -47,6 +47,31 @@ void main() {
 
   // Map
 
+  Map<String, dynamic> book = {
+    'title': 'Oryx and Crake',
+    'author': 'Margaret Atwood',
+    'pages': 350,
+  };
+  print(book['title']);
+
+  book['published'] = 2003;
+  print(book);
+
+  var keys = book.keys;
+  
+  var values = book.values;
+
+  var valuesmaybe = book.values.toList();
+
+  print(values);
+  print(valuesmaybe);
+
+  for (MapEntry b in book.entries) {
+    print('key ${b.key}, Value ${b.value}');
+  }
+
+  book.forEach((k, v) => print('key : $k, Value : $v'));
+
   // Set
 
 
