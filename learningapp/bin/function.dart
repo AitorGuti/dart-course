@@ -3,7 +3,7 @@ void main() {
   addfive(x) {
     if (x >= 5) {
 
-    'she farted on my dick';
+    'she shlarted';
 
     } else {
 
@@ -20,6 +20,6 @@ void main() {
 
   var num1 = 20000000;
 
-  print('niggers have an IQ greater than $num1');
+  print('I have an IQ greater than $num1');
 
 }
