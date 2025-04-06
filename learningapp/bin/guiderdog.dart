@@ -13,6 +13,7 @@ abstract class Dog {
 
 class Pug extends Dog {
   String breed = 'pug';
+  bool gender_is_female = true;
 
   @override
   void walk(b) {

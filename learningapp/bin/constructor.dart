@@ -1,7 +1,7 @@
 
 void main() {
   var rect1 = Rectangle(25, 30);
-  const cir1 = Circle(radius: 50, name: 'Circle 1');
+  const cir1 = Circle(radius: 50);
 
   // print(rect1.width); // Works
   // print(cir1.radius); // Now this works too! Output: 50
@@ -14,6 +14,9 @@ void main() {
 
   print(p2.lat);
 
+  cir1.addname('circle 1 lmao');
+  print(cir1.name);
+
 }
 
 class Circle {
@@ -22,6 +25,10 @@ class Circle {
 
   // Use initializing formals (this.radius, this.name)
   const Circle({required this.radius, this.name});
+
+  Circle.addname(String newname) {
+    const Circle(name: newname); // This is not how you set the name
+  }
 }
 
 // (Rectangle class remains the same as in your example)

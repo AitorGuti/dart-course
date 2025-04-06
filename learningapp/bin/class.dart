@@ -38,7 +38,7 @@ void main() {
   Ball vision1 = Ball('Vision', 'Fluent Spanish', 6.0, 'blue');
   DottedLine line1 = DottedLine('dotted', 'red', 5.0, 2.0, 45.0, 90.0);
 
-  print(line1.colour);
+  var type_of_vision = vision1.description; // 'Fluent Spanish' is set as the description of the vision1 object
 
   line1.matchballcolour(line1, vision1);
 
