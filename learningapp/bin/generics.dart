@@ -1,16 +1,18 @@
 class Box<T> {
   T something;
-  Box(this.something);
+  dynamic? number;
+
+  Box(this.something, [this.number]);
 
   T openBox() {
-    return value;
+    return something;
   }
 }
 
 void main() {
-  Box<String> box1 = Box('cool');
+  Box<String> box1 = Box('cool', 20.23);
   Box<double> box2 = Box(2.23);
 
-  print(box1.openBox());
   print(box1.something);
+  print(box1.number);
 }

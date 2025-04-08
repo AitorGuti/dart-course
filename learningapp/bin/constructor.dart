@@ -13,8 +13,6 @@ void main() {
   print(p1.lng);
 
   print(p2.lat);
-
-  cir1.addname('circle 1 lmao');
   print(cir1.name);
 
 }
@@ -25,10 +23,6 @@ class Circle {
 
   // Use initializing formals (this.radius, this.name)
   const Circle({required this.radius, this.name});
-
-  Circle.addname(String newname) {
-    const Circle(name: newname); // This is not how you set the name
-  }
 }
 
 // (Rectangle class remains the same as in your example)
